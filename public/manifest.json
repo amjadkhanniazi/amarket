@@ -1,6 +1,9 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "web_accessible_resources": [
+    "tileset/*.json", "layer/*.json", "sound/*.ogg"
+  ],
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,4 +25,5 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
+
 }
