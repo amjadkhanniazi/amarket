@@ -37,8 +37,17 @@
   }
 }
 
+/* floating Buttons CSS */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
 /* Section2 CSS */
 .card-row {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -54,6 +63,20 @@
   align-items: center;
   border-radius: 5%;
   
+}
+.card::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0973ec;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover::before{
+  transform: scaleX(0.9);
 }
 
 .card img {

@@ -16,9 +16,9 @@ const Card = ({ imageSrc, text, description }) => {
 const Section2 = () => {
   return (
     <div className="card-row">
-      <Card imageSrc={LinkBuildLogo} text="Link Building" description="Hello! There, This is Link Building CArd..." />
-      <Card imageSrc={CustomerSupport} text="Customer Support" description="Hello! There, This is Customer Support CArd..." />
-      <Card imageSrc={SeoSection2} text="One Page SEO" description="Hello! There, This is One Page Seo CArd..." />
+      <Card imageSrc={LinkBuildLogo} text="Link Building" description="Supercharge your search ranking! Get valuable links and watch your website climb to the top." />
+      <Card imageSrc={CustomerSupport} text="Customer Support" description="Happy customers, happy business! We provide stellar support to build trust and loyalty." />
+      <Card imageSrc={SeoSection2} text="One Page SEO" description="Dominate your target keyword with a powerful, laser-focused landing page." />
     </div>
   );
 };
