@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+/* Section2 CSS */
+.card-row {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 16px;
+}
+ .card h5{
+  font-weight: bold;
+ }
+
+ @media (max-width: 768px) {
+  .card-row {
+     flex-direction: column;
+   }
+  .card {
+     width: 100%;
+   }
+ }
