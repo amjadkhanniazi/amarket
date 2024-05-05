@@ -96,3 +96,38 @@
      width: 100%;
    }
  }
+
+ /* Section3 CSS */
+ .Section3ParentDdiv {
+  display: flex; /* Make the parent div a flex container */
+  width: 90%;
+}
+
+.Section3Div1,
+.Section3Div2 {
+  flex: 1; /* Make each child div take up half the space */
+}
+.Section3Div1{
+  display: flex;
+  justify-content: right;
+  
+}
+.Section3Div1 img{
+  width: 80%;
+  height: 800px;
+}
+
+.Section3Div2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .Section3ParentDdiv {
+    flex-direction: column;
+  }
+}
