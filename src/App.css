@@ -133,13 +133,6 @@
   margin-top: 15px;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .Section3ParentDdiv {
-    flex-direction: column;
-  }
-}
-
 /* Section3 List CSS */
 .services-list {
   display: flex;
@@ -164,4 +157,24 @@
 .services-list li strong {
   color: #333;
   font-weight: bold;
+}
+
+/* Section3 Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .Section3ParentDdiv {
+    display: block;
+    
+  }
+  .Section3Div1, .Section3Div1 img {
+    width: 100%; /* Full width for the image container and image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .Section3Div2 {
+    text-align: center; /* Center the text for heading and paragraph */
+    width: 100%;
+  }
+  .Section3Div2 h2, .Section3Div2 p {
+    width: 100%; /* Full width for the text elements */
+    height: auto;
+  }
 }
